@@ -1,0 +1,21 @@
+#container {
+    width: 960px;
+}
+
+#footer {
+    color: #fff;
+    background-image: url(../images/background.jpg);
+    background-repeat: repeat-x;
+    height: 40px;
+    background-color: #090;
+}
+
+#header {
+    background-image: url(../images/banner2.jpg);
+    max-height: 130px;
+}
+
+.greentext {
+    color: green;
+}
+

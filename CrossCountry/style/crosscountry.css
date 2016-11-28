@@ -1,0 +1,67 @@
+h1 {
+	text-align: center;
+	color: white;
+}
+body {
+	font-family: "Century";
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 25px;
+	font-weight: bold;
+	color: white;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../images/Gryphon.jpg);
+	background-size: 2000px;
+}
+input[type="text"] {
+	border-radius: 30px;
+	width: 130px;
+	height: 40px;
+	text-align: center;
+}
+.addRunner {
+	background-color: white;
+	text-align: center;
+	font-size: 16px;
+	margin: 6px 4px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	opacity: 50%;
+	border-radius: 30px;
+	width: 300px;
+	height: 65px;
+	border: 2px solid green;
+}
+.addRunner:hover {
+	background-color: #3e8e41;
+}
+.addRunner:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(6px);
+}
+
+.remove {
+	border-radius: 60px;
+	border: red;
+	width: 50px;
+	height: 40px;
+	background-color: white;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+.remove:hover {
+	background-color: red;
+}
+.remove:active {
+	background-color: red;
+	box-shadow: 0 5px #666;
+	transform: translateY(5px);
+}
+
+.error{
+	background-color: red;
+}
+
+.correct{
+	
+}

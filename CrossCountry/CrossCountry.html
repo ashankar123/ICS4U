@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bayview Glen Cross Country</title>
+    <link href="style/crosscountry.css" rel="stylesheet" type="text/css">
+    <script src="js/crosscountry.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Bayview Glen Cross Country</h1><br>
+        <!-->creating table for runner inputs</!-->
+        <table id="runnerData">
+            <!-->add row ids for easy use of methods</!-->
+            <tr id="1">
+            <!-->create necessary cells for each input, repeat for initial five runners</!-->
+                <td><input class="remove" id="remove" name="aRemove" onclick="removeRunner(this)" type="button" value="X"></td>
+                <td><input id="name" name="aName" onchange="checkFormat(1)" placeholder=" name here" type="text"></td>
+                <td><input id="mileOne1" name="aFirstMile" onchange="checkFormat(1)" placeholder=" Mile One" type="text"></td>
+                <td><input id="mileTwo1" name="aSecondMile" onchange="checkFormat(1)" placeholder=" Mile Two" type="text"></td>
+                <td><input disabled id="splitTwo1" name="aSplitTwo" placeholder="Split Two" type="text"></td>
+                <td><input disabled id="splitThree1" name="aSplitThree" placeholder="Split Three" type="text"></td>
+                <td><input id="totalTime1" name="aTotalTime" onchange="checkFormat(1)" placeholder="Total Time" type="text"></td>
+            </tr>
+            <tr id="2">
+                <td><input class="remove" id="remove" name="bRemove" onclick="removeRunner(this)" type="button" value="X"></td>
+                <td><input id="name" name="bName" onchange="checkFormat(2)" placeholder=" name here" type="text"></td>
+                <td><input id="mileOne2" name="bFirstMile" onchange="checkFormat(2)" placeholder=" mm:ss.sss" type="text"></td>
+                <td><input id="mileTwo2" name="bSecondMile" onchange="checkFormat(2)" placeholder=" mm:ss.sss" type="text"></td>
+                <td><input disabled id="splitTwo2" name="bSplitTwo2" type="text"></td>
+                <td><input disabled id="splitThree2" name="bSplitThree2" type="text"></td>
+                <td><input id="totalTime2" name="bTotalTime2" onchange="checkFormat(2)" placeholder=" mm:ss.sss" type="text"></td>
+            </tr>
+            <tr id="3">
+                <td><input class="remove" id="remove" name="cRemove" onclick="removeRunner(this)" type="button" value="X"></td>
+                <td><input id="name" name="cName" onchange="checkFormat(3)" placeholder=" name here" type="text"></td>
+                <td><input id="mileOne3" name="cFirstMile" onchange="checkFormat(3)" placeholder=" mm:ss.sss" type="text"></td>
+                <td><input id="mileTwo3" name="cSecondMile" onchange="checkFormat(3)" placeholder=" mm:ss.sss" type="text"></td>
+                <td><input disabled id="splitTwo3" name="cSplitTwo3" type="text"></td>
+                <td><input disabled id="splitThree3" name="cSplitThree3" type="text"></td>
+                <td><input id="totalTime3" name="cTotalTime3" onchange="checkFormat(3)" placeholder=" mm:ss.sss" type="text"></td>
+            </tr>
+            <tr id="4">
+                <td><input class="remove" id="remove" name="dRemove" onclick="removeRunner(this)" type="button" value="X"></td>
+                <td><input id="name" name="dName" placeholder=" name here" type="text"></td>
+                <td><input id="mileOne4" name="dFirstMile" placeholder=" mm:ss.sss" type="text" onchange="checkFormat(4)"></td>
+                <td><input id="mileTwo4" name="dSecondMile" placeholder=" mm:ss.sss" type="text" onchange="checkFormat(4)"></td>
+                <td><input disabled id="splitTwo4" name="dSplitTwo4" type="text"></td>
+                <td><input disabled id="splitThree4" name="dSplitThree4" type="text"></td>
+                <td><input id="totalTime4" name="dTotalTime4" placeholder=" mm:ss.sss" type="text" onchange="checkFormat(4)"></td>
+            </tr>
+            <tr id="5">
+                <td><input class="remove" id="remove" name="eRemove" onclick="removeRunner(this)" type="button" value="X"></td>
+                <td><input id="name" name="eName" placeholder=" name here" type="text"></td>
+                <td><input id="mileOne5" name="ecFirstMile" placeholder=" mm:ss.sss" type="text" onchange="checkFormat(5)"></td>
+                <td><input id="mileTwo5" name="eSecondMile" placeholder=" mm:ss.sss" type="text" onchange="checkFormat(5)"></td>
+                <td><input disabled id="splitTwo5" name="eSplitTwo" type="text"></td>
+                <td><input disabled id="splitThree5" name="eSplitThree" type="text"></td>
+                <td><input id="totalTime5" name="eTotalTime" placeholder=" mm:ss.sss" type="text" onchange="checkFormat(5)"></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+            <!-->add runner, adds another row of all the same inputs</!-->
+                <td><input class="addRunner" id="addRunner" onclick="addRunner()" type="button" value="Add Runner"></td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
