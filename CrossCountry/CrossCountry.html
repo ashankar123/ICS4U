@@ -9,11 +9,8 @@
 <body>
     <center>
         <h1>Bayview Glen Cross Country</h1><br>
-        <!-->creating table for runner inputs</!-->
         <table id="runnerData">
-            <!-->add row ids for easy use of methods</!-->
             <tr id="1">
-            <!-->create necessary cells for each input, repeat for initial five runners</!-->
                 <td><input class="remove" id="remove" name="aRemove" onclick="removeRunner(this)" type="button" value="X"></td>
                 <td><input id="name" name="aName" onchange="checkFormat(1)" placeholder=" name here" type="text"></td>
                 <td><input id="mileOne1" name="aFirstMile" onchange="checkFormat(1)" placeholder=" Mile One" type="text"></td>
@@ -61,7 +58,6 @@
         </table>
         <table>
             <tr>
-            <!-->add runner, adds another row of all the same inputs</!-->
                 <td><input class="addRunner" id="addRunner" onclick="addRunner()" type="button" value="Add Runner"></td>
             </tr>
         </table>
